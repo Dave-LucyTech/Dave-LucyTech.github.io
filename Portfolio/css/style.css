@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap');
+:root{
+    --white: #ffffff;
+    --body:#545d6d;
+    --dark: #202631;
+    --border-color: rgb(0,0,0,0.1);
+    --border-width: 1px;
+    --radius: 30px;
+}
+body{
+    font-family:"Barlow", sans-serif;
+    line-height: 1.8;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+    color: var(--dark);
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+
+a:hover{
+    color: var(--dark );
+}
+
+img{
+    width: 100%;
+}
+section{
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+.navbar{
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    z-index: 9999;
+}
+.navbar-brand{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.navbar .navbar-nav .navbar-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.social-links a {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+@media (max-width: 992px){
+    .navbar{
+        background-color: var(--dark);
+    }
+}
+#hero{
+    background:url(../image/pic.png);
+    min-height: 100vh;
+    background-position:unset;
+    background-size: cover;
+}
+#hero h1,
+#hero p{
+    color: var(--white);
+}
+#hero h1{
+    font-weight: 900;
+}
+#hero p{
+    font-size: 18px;
+    max-width: 450px;
+}
+.btn{
+    padding: 20px 44px;
+    border-width: 2px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.intro{
+    margin-bottom: 30px;
+}
+
+.hr-line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--dark);
+    display: inline-block;
+
+}
+
+.intro h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.intro p{
+    max-width: 500px;
+}
+
+.intro.intro-dark h1,
+.intro.intro-dark p{
+    color: white;
+}
+
+.intro.intro-dark .hr-line{
+    background-color: white;
+}
+
+.service{
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--radius);
+    display: flex;
+    padding: 32px;
+}
+
+.service .icon{
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark);
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--white);
+    border-radius: var(--radius);
+    margin-right: 16px;
+}
+
+.link-arrow{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.link-arrow i{
+    transition: all 0.4s ease; 
+}
+
+.link-arrow:hover i{
+    transform: translate(5px, -5px);
+}
+
+.link-arrow.link-dark{
+    color: var(--body);
+}
+
+.link-arrow.link-dark:hover{
+    color: white;
+}
+
+#work{
+    background-color: var(--dark);
+}
+
+.project h3{
+    color: white;
+    margin-top: 20px;
+}
+
+.project .image-wrapper{
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.project .image-wrapper img{
+    border-radius: var(--radius);
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+
+}
+
+.project:hover .image-wrapper img{
+    transform: scale(1);
+}
+
+#about img{
+    border-radius: var(--radius);
+}
+
+/* ======Skills=======*/
+
+#skills{
+    background-color: var(--dark);
+}
+#skills h1 {
+    color: white;
+    margin-top: 20px;
+}
+#skills p{
+    color: white;
+    margin-top: 20px;
+}
+.skills .progress{
+    height: 50px;
+    display:block;
+    background: none;
+}
+
+.skills .progress .skill .val{
+
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap{
+
+    background: #dce8f8;
+}
+
+
+/* ======Testimpnials======*/
+
+.testimonials{
+    background-color: #f8f8f8;
+}
+.review{
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 32px;
+    background-color: white;
+}
+
+.review .person{
+    display: flex;
+    align-items: center;
+}
+
+.review .person img{
+    width: unset;
+    border-radius: var(--radius);
+    margin-right: 16px;
+}
+
+.review .stars{
+    color: orange;
+}
+
+.review p{
+    border-bottom: var(--border-width) solid var(--border-color);
+    padding-top: 16px;
+}
+
+/*====Contact===*/
+
+#contact form{
+    padding: 32px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--radius);
+    background: #545d6d;
+}
+
+#contact form .form-control{
+    background-color: #f8f8f8;
+    border: transparent;
+    border-radius: var(--radius);
+    padding-left: 18px;
+
+}
+
+#contact form input.form-control{
+    height: 56px;
+}
+
+#insta-posts{
+    position: relative;
+}
+
+.insta-follow{
+    width: 90px;
+    height: 90px;
+    background-color: var(--dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    border-radius: var(--radius);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.insta-follow:hover{
+    background-color: white;
+}
+
+#insta-posts:hover .insta-follow{
+    opacity: 1;
+    top: 50%;
+}
+
+.footer-top{
+    padding-bottom: 30px;
+    border: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+footer .social-links a{
+    border: var(--border-width) solid var(--border-color);
+}
+
+/*======back to top=====*/
+
